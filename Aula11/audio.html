@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio</title>
+</head>
+<body>
+    <h1>Reproduzindo Áudio.</h1>
+    <p>Vamos aprender reproduzir áudio em HTML5.</p>
+    <ul>
+        <h3>Utilizando a tag audio.</h3>
+        <li>BMW M3 GTR in Need For Speed Most Wanted.</li>
+        <audio src="audios/bmwm3nfsmw.mp3" controls autoplay></audio>
+        <p><a href="audios/bmwm3nfsmw.mp3" target="_blank" ref="external" download="bmwm3nfsmw.mp3" type="application/mp3">Baixar música.</a></p>
+        <li>Músicas HotWheels Acceleracers.</li>
+        <audio src="audios/HotWhells.mp3" controls autoplay></audio>
+        <li>Mísica Aleatórioa</li>
+        <audio src="audios/NiceLogo.mp3" controls autoplay></audio>
+    </ul>
+
+    <ul>
+        <h3>Utilizando o source e download de audios</h3>
+        <audio preload="metadata" controls autoplay>
+            <source src="audios/bmwm3nfsmw.mp3" type="audio/mpeg">
+            <source src="audios/bmwm3nfsmw.ogg" type="audio/ogg">
+            <source src="audios/bmwm3nfsmw.wav" type="audio/wav">
+            <p>Infelizmente seu navegador não é compátivel com a reprodução de áudio.</p>
+            <a href="audios/bmwm3nfsmw.mp3">Clique aqui para baixar o arquivo MP3.</a>
+        </audio>
+    </ul>
+
+
+    <p><a href="index.html">Página principal.</a></p>
+</body>
+</html>
